@@ -1,0 +1,55 @@
+Requirement:
+       Need a team of four or five freelancer to work on a Prototype to allow 
+       Video Store and Streaming with RTMP/HLS protocols using a 
+       VOD server. Please go thru the details of Project modules.
+
+      Phase1 :-
+      Web Portal & Database
+      a) We need a portal which allows authorized admin to login and upload
+          video which can be made as video categories with language or genre etc,
+          and allow other users to  view video and make playlist.
+              admin:- can upload, delete and update video.
+              admin:- can create other users which allow them to prepare playlist.
+                           admin can create/approve and delete users.
+              mysql:- can allow this and maintain records of video objects.
+       b) We need a portal which allow users to create a profile and prepare
+            their own playlist and register there devices.
+               user:- can add device, remove device and update device he consumes
+                          the video.
+               user:- can refer or introduce new users.
+               mysql:- can allow and manage a playlist of users with access privilage 
+                            and other details.
+   
+        RED5 Server,FFMPEG & filestore.
+        i) We need to configure the RED5 Server to allow streaming of Video
+            present in filestore and PLAY a list of video as per PlayList concurrently.
+                 RED5: - can PLAY, PAUSE, STOP and END for streaming video.
+                 FFMPEG:- can convert MP4, AVI etc to FLV format.
+        ii) We need a filestore to allow us to manage a content management system.
+                   filestore:- Allow Admin to create Media Objects which contains.
+                                (Video File, Synopsis, Actor Cast, Director, Duration, Rating)
+                   filestore:- Allow Admin to Upload Video, Convert to FLV format and
+                                    delete a video.
+                   filestore:- and MYSQL DB should have consistent names.
+       iii) FFMPEG should be able to process UPLOADED Video and convert to
+            FLV Format so that RED5 Server can process and provide for streaming
+            RTMP and HLS.
+
+          Web Portal
+         1) We need a Front Web Portal which is user friendly and intuitive to users.
+         2) We need following operations to be managed.
+                 a) Admin to create users, set password, privlages and profile.
+                 b) User to login, create a profile and personal details.
+                         - Prepare playlist, (create, update, delete).
+                 c) We need a "VIDEO PLAYER" which allow users to perform 
+                      PLAY, PAUSE, STOP and END 
+                 
+           Client App (Android App, IPAD App)
+           #   We need an Android App/ IPAD App which can work on 
+                HDMI Streaming stick which allow users to register in Server 
+                using mac address,
+          ##  We need a Client "VIDEO PLAYER" which allow users to choose
+                 Playlist prepared by "user" in the web portal to PLAY on DEVICE.
+
+
+          
